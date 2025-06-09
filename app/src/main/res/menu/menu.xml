@@ -3,7 +3,7 @@
     <item android:id="@+id/item_bg_red" android:title="배경색(빨강)"></item>
     <item android:id="@+id/item_bg_blue" android:title="배경색(파랑)"></item>
     <item android:id="@+id/item_bg_green" android:title="배경색(초록)"></item>
-    <item android:title="버튼변경 >>">
+    <item android:title="버튼변경 >> ">
         <menu>
             <item android:id="@+id/subitem_rotation" android:title="45도 회전"></item>
             <item android:id="@+id/subitem_zoomin" android:title="2배확대"></item>

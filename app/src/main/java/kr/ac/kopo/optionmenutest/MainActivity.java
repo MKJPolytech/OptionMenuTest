@@ -19,7 +19,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
     LinearLayout linear;
     Button btn;
-
+//    int btnAngle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreateOptionsMenu(menu);
         MenuInflater menuInflater = getMenuInflater();
         menuInflater.inflate(R.menu.menu, menu);
-
         return true;
     }
 
@@ -58,16 +57,17 @@ public class MainActivity extends AppCompatActivity {
         }else if(item.getItemId() == R.id.item_bg_green){
             linear.setBackgroundColor(Color.GREEN);
             return true;
-        }else if(item.getItemId() == R.id.subitem_rotation) {
-            Log.v("%%%%%%%%%%%%%%%",btn.getRotation()+"");
-            btn.setRotation(btn.getRotation() + 45);     // 45도씩 누적 회전
+        }else if(item.getItemId() == R.id.subitem_rotation){
+//            btnAngle += 45;
+            btn.setRotation(btn.getRotation()+45);
             return true;
-        }else if(item.getItemId() == R.id.subitem_zoomin) {
+        }else if(item.getItemId() == R.id.subitem_zoomin){
             btn.setScaleX(2);
             return true;
-        }else if(item.getItemId() == R.id.subitem_basic) {
+        }else if(item.getItemId() == R.id.subitem_basic){
             btn.setRotation(0);
             btn.setScaleX(1);
+//            btnAngle = 0;
             return true;
         }
 
